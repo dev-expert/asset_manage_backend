@@ -27,6 +27,6 @@ app.use('/graphql',graphqlHTTP({
     res.sendFile(path.resolve(__dirname,'public','index.html'))
   })
 
-app.listen(Process.env.PORT, () => {
+app.listen(process.env.PORT, () => {
     console.log("Listening at :5000...");
 });
